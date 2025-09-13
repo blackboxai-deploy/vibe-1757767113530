@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "FLOUNDER - Lightning-fast remote development environment with QR code phone access",
-  "keywords": ["remote-development", "qr-code", "mobile-dev", "cloud-ide", "flounder"],
+  "keywords": [
+    "remote-development",
+    "qr-code",
+    "mobile-dev",
+    "cloud-ide",
+    "flounder"
+  ],
   "scripts": {
-    "dev": "PORT=3000 next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && PORT=3000 next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint"
   },
   "dependencies": {
